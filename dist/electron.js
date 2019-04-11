@@ -20,10 +20,6 @@ function createWindow() {
     // Open the DevTools.
     win.webContents.openDevTools()
 
-    win.once('ready-to-show', () => {
-
-    })
-
     //wait until webpack build html page
     win.webContents.on('did-finish-load', () => {
         win.show()
