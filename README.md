@@ -40,9 +40,7 @@
 
 To package the app fro windows platform:
 
-```bash
-$ npm run package:win
-```
+`npm run package:win`
 
 ## Maintainer
 
