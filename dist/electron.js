@@ -21,8 +21,14 @@ function createWindow() {
     win.webContents.openDevTools()
 
     win.once('ready-to-show', () => {
-        win.show()
+
     })
+
+    //wait until webpack build html page
+    win.webContents.on('did-finish-load', () => {
+        win.show()
+        win.focus()
+    });
 
     // Emitted when the window is closed.
     win.on('closed', function () {
