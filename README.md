@@ -24,6 +24,7 @@
 ## Features
 
 * Electron 4
+* Electron Builder
 * React 16
 * Webpack 4
 * Babel 7
@@ -40,7 +41,7 @@
 
 To package the app fro windows platform:
 
-`npm run package:win`
+`npm run release:win`
 
 ## Maintainer
 

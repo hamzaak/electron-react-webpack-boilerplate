@@ -1,22 +1,24 @@
 {
+  "appId": "com.hamzaak.electron-react-webpack-boilerplate",
   "name": "electron-react-webpack-boilerplate",
+  "productName": "Electron React Webpack Boilerplate",
+  "author": "Hamza AK",
   "version": "1.0.0",
   "license": "MIT",
   "description": "A minimal desktop app that uses electron, react, webpack, and babel.",
-  "main": "dist/electron.js",
+  "main": "public/electron.js",
   "keywords": [
     "Electron",
     "React",
     "Webpack",
     "Babel"
   ],
-  "author": "Hamza AK",
   "scripts": {
     "start": "npm-run-all --parallel start:react start:electron",
     "start:electron": "electron .",
     "start:react": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build:react": "webpack --mode production",
-    "package:win": "npm run \"build:react\" && electron-packager . electron-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=dist/assets/app.ico --prune=true --out=builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Minimal Electron Boilerplate\""
+    "bundle:react": "webpack --mode production",
+    "release:win": "npm run \"bundle:react\" && node installers/windows/installer.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -25,7 +27,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "electron": "^4.1.4",
-    "electron-packager": "^13.1.1",
+    "electron-builder": "^20.39.0",
     "npm-run-all": "^4.1.5",
     "react-hot-loader": "^4.3.11",
     "webpack": "^4.23.1",
