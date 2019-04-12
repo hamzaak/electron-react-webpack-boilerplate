@@ -7,17 +7,17 @@
 <br>
 
 <div align="center">
-  <a href="https://electronjs.org/"><img src="./dist/assets/electron.png" /></a>
-  <a href="https://facebook.github.io/react/"><img src="./dist/assets/react.png" /></a>
-  <a href="https://webpack.github.io/"><img src="./dist/assets/webpack.png" /></a>
-  <a href="https://babeljs.io/"><img src="./dist/assets/babel.png" /></a>
+  <a href="https://electronjs.org/"><img src="./public/assets/electron.png" /></a>
+  <a href="https://facebook.github.io/react/"><img src="./public/assets/react.png" /></a>
+  <a href="https://webpack.github.io/"><img src="./public/assets/webpack.png" /></a>
+  <a href="https://babeljs.io/"><img src="./public/assets/babel.png" /></a>
 </div>
 
 <hr />
 <br />
 
 <div align="center">
-<img src="./dist/assets/home.png" alt="Electron React Webpack Boilerplate"/>
+<img src="./public/assets/home.png" alt="Electron React Webpack Boilerplate"/>
 </div>
 <hr />
 
@@ -37,7 +37,7 @@
 * npm install
 * npm start
 
-## Packing for distribution
+## Packing for publicribution
 
 To package the app fro windows platform:
 
