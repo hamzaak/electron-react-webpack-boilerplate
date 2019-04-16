@@ -18,7 +18,7 @@
     "start:electron": "electron .",
     "start:react": "webpack-dev-server --config ./webpack.config.js --mode development",
     "bundle:react": "webpack --mode production",
-    "release:win": "npm run \"bundle:react\" && node installers/windows/installer.js"
+    "dist": "npm run \"bundle:react\" && node installers/windows/installer.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -28,6 +28,7 @@
     "babel-loader": "^8.0.4",
     "electron": "^4.1.4",
     "electron-builder": "^20.39.0",
+    "electron-devtools-installer": "^2.2.4",
     "npm-run-all": "^4.1.5",
     "react-hot-loader": "^4.3.11",
     "webpack": "^4.23.1",

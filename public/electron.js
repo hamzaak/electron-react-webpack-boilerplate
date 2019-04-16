@@ -32,7 +32,14 @@ function createWindow() {
             app.quit()
         }
         win = null
-    })
+    });
+
+    if (isDev) {
+        const { REACT_DEVELOPER_TOOLS, default: installExtension } = require('electron-devtools-installer');
+        installExtension(REACT_DEVELOPER_TOOLS).then(() => {
+            win.webContents.openDevTools();
+        });
+    }
 }
 
 app.on('ready', createWindow)

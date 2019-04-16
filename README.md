@@ -37,11 +37,11 @@
 * npm install
 * npm start
 
-## Packing for publicribution
+## Packing for distribution
 
 To package the app fro windows platform:
 
-`npm run release:win`
+`npm run dist`
 
 ## Maintainer
 
